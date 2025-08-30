@@ -1,6 +1,6 @@
 backend:
   name: git-gateway
-  branch: main  # or "master" if your repo uses master
+  branch: main   # or master if your repo uses that
 
 media_folder: "images/uploads"
 public_folder: "/images/uploads"
@@ -15,4 +15,3 @@ collections:
       - { name: "title", label: "Title" }
       - { name: "date", label: "Date", widget: "datetime" }
       - { name: "body", label: "Body", widget: "markdown" }
-
