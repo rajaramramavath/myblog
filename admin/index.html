@@ -4,21 +4,16 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>My Blog CMS</title>
-  
-  <!-- Favicon -->
   <link rel="icon" href="/favicon.ico" type="image/x-icon" />
-
-  <!-- Optional: add your custom styles -->
-  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <script>
-    // Load Netlify CMS classic mode (avoids SES issues)
+    // Avoid SES issues
     window.CMS_MANUAL_INIT = true;
   </script>
 
-  <!-- Netlify CMS script -->
-  <script src="https://unpkg.com/netlify-cms@^2.15.72/dist/netlify-cms.js"></script>
+  <!-- Fixed Netlify CMS script URL (no ^) -->
+  <script src="https://unpkg.com/netlify-cms@2.15.72/dist/netlify-cms.js"></script>
 
   <script>
     // Initialize CMS manually
