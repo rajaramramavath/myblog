@@ -1,0 +1,17 @@
+backend:
+  name: git-gateway
+  branch: main   # or "master" if your repo uses that
+
+media_folder: "static/images/uploads"    # where uploaded images will be saved in repo
+public_folder: "/images/uploads"         # how images are referenced in the site
+
+collections:
+  - name: "blog"
+    label: "Blog"
+    folder: "content/blog"               # better than "_posts" unless you are using Jekyll
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { name: "title", label: "Title", widget: "string" }
+      - { name: "date", label: "Date", widget: "datetime" }
+      - { name: "body", label: "Body", widget: "markdown" }
